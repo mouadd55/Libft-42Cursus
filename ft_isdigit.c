@@ -6,11 +6,11 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 11:21:46 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/13 12:36:21 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/28 09:30:17 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int ch)
 {

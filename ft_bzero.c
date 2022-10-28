@@ -6,22 +6,20 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:47:03 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/13 13:38:36 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/27 13:19:39 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
 	size_t	i;
 
-	str = (char *)s;
 	i = 0;
 	while (i < n)
 	{
-		str[i] = '\0';
+		((char *)s)[i] = '\0';
 		i++;
 	}
 }

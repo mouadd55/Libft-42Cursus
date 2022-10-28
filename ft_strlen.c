@@ -6,13 +6,13 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 10:49:05 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/12 13:29:52 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/28 09:45:00 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -21,8 +21,3 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_strlen("Heeellooooo"));
-// }

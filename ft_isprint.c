@@ -6,11 +6,11 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 11:35:37 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/13 12:35:42 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/28 09:42:55 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int ch)
 {

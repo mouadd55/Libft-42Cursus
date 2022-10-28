@@ -6,11 +6,11 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 13:19:05 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/13 12:01:41 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/28 09:40:58 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int ch)
 {

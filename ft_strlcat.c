@@ -6,11 +6,10 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 15:58:24 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/24 17:02:42 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/28 15:02:24 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
@@ -20,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	ldst = ft_strlen(dst);
 	lsrc = ft_strlen(src);
-	if ((!src && !dst) || dstsize == 0)
+	if ((src == 0 && dst == 0) || dstsize == 0)
 		return (lsrc);
 	if (ldst >= dstsize)
 		return (dstsize + lsrc);
