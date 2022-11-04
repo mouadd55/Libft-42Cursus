@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 20:26:37 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/25 15:51:05 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/02 22:21:54 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,10 @@ char	**ft_split(char const *s, char c)
 	char	**str;
 
 	i = 0;
-	if (s == '\0')
-		return (NULL);
+	if (s == 0)
+		return (0);
 	str = malloc((ft_word(s, c) + 1) * sizeof(char *));
-	if (str == '\0')
+	if (str == 0)
 		return (0);
 	while (*s != '\0')
 	{
@@ -84,18 +84,16 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-// int main(int argc, char **argv)
+// int main ()
 // {
-//     int i;
-//     char    **splits;
+// 	int i;
+// 	char **s;
 
-//     i = 0;
-//     splits = ft_split(argv[1], ' ');
-//     (void)argc;
-//     //char *s = "  hello   it's    me    ";
-//     while (splits[i])
-//     {
-//         printf("%s\n", splits[i++]);
-//     }
-//     return (0);
+// 	i = 0;
+// 	s = ft_split("  Hello  1337  Khouribga", ' ');
+// 	while (s[i])
+// 	{
+// 		printf("%s\n", s[i]);
+// 		i++;
+// 	}
 // }

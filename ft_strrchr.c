@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 14:46:22 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/26 18:12:53 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/02 09:30:40 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strrchr(const char *s, int c)
 			return (str + len);
 		len--;
 	}
-	return (NULL);
+	return (0);
 }

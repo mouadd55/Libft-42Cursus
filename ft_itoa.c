@@ -6,13 +6,13 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 18:10:49 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/27 18:16:36 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/04 10:37:31 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	nbr_len(int nbr)
+static int	nbr_len(long nbr)
 {
 	int	len;
 

@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:56:16 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/28 14:29:18 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/04 10:33:07 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-// int main ()
-// {
-// 	char str[19] = "This is an example";
-// 	printf("%s\n", ft_memmove(str + 7, str, 10));
-// }

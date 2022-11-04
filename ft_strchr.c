@@ -6,14 +6,13 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:17:32 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/28 09:36:17 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/04 10:34:39 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
-//    this function 
 {
 	int		i;
 	char	*str;
@@ -27,6 +26,6 @@ char	*ft_strchr(const char *s, int c)
 		i++;
 	}
 	if (c == '\0')
-		return (&str[i]);
+		return (str + i);
 	return (0);
 }

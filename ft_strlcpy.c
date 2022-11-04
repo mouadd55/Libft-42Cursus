@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 08:28:11 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/28 15:54:35 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/10/29 09:27:41 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (ft_strlen(src));
 }
-

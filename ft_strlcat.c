@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 15:58:24 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/28 15:02:24 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/04 10:34:51 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,23 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	ldst;
 	size_t	lsrc;
+	size_t	i;
 
-	ldst = ft_strlen(dst);
+	i = 0;
 	lsrc = ft_strlen(src);
-	if ((src == 0 && dst == 0) || dstsize == 0)
+	if (dst == 0 && dstsize == 0)
 		return (lsrc);
-	if (ldst >= dstsize)
-		return (dstsize + lsrc);
-	if (lsrc < dstsize - ldst)
-		ft_memcpy (dst + ldst, src, lsrc + 1);
-	else
+	ldst = ft_strlen(dst);
+	if (dstsize > ldst + 1)
 	{
-		ft_memcpy (dst + ldst, src, dstsize - 1);
-		dst[dstsize - 1] = '\0';
+		while (ldst + i + 1 < dstsize && src[i])
+		{
+			dst[ldst + i] = src[i];
+			i++;
+		}
 	}
-	return (lsrc + ldst);
+	if (dstsize < ldst + 1)
+		return (dstsize + lsrc);
+	dst[ldst + i] = '\0';
+	return (ldst + lsrc);
 }
