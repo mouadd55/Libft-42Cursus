@@ -6,18 +6,11 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:06:12 by moudrib           #+#    #+#             */
-/*   Updated: 2022/11/01 11:12:26 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/06 22:28:18 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char	fun(unsigned int i, char str)
-// {
-// 	(void)i;
-// 	str = str + 1;
-// 	return str;
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -38,8 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = 0;
 	return (str);
 }
-
-// int main ()
-// {
-// 	printf("%s",ft_strmapi("ayman",fun));
-// }

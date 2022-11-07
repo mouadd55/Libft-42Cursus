@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 14:12:31 by moudrib           #+#    #+#             */
-/*   Updated: 2022/10/30 19:16:40 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/07 01:41:19 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-// int main ()
-// {
-// 	int fd;
-
-// 	fd = open("test.txt", O_CREAT | O_RDWR, 0777);
-// 	ft_putstr_fd("Hello", fd);
-// 	printf("%d\n", fd);
-// }

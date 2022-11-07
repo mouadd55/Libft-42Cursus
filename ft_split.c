@@ -6,7 +6,7 @@
 /*   By: moudrib <moudrib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 20:26:37 by moudrib           #+#    #+#             */
-/*   Updated: 2022/11/02 22:21:54 by moudrib          ###   ########.fr       */
+/*   Updated: 2022/11/07 20:59:19 by moudrib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static char	**free_arr(char **str)
 		i++;
 	}
 	free (str);
-	return (str);
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
@@ -83,17 +83,3 @@ char	**ft_split(char const *s, char c)
 	str[i] = 0;
 	return (str);
 }
-
-// int main ()
-// {
-// 	int i;
-// 	char **s;
-
-// 	i = 0;
-// 	s = ft_split("  Hello  1337  Khouribga", ' ');
-// 	while (s[i])
-// 	{
-// 		printf("%s\n", s[i]);
-// 		i++;
-// 	}
-// }
