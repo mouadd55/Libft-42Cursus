@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 		if (*s != '\0')
 		{
 			str[i] = ft_substr(s, 0, ft_lenword(s, c));
-			if (str[i] == '\0')
+			if (str[i] == 0)
 				return (free_arr(str));
 			i++;
 		}
