@@ -48,7 +48,7 @@ static char	**free_arr(char **str)
 	i = 0;
 	while (str[i])
 	{
-		free (&str[i]);
+		free (str[i]);
 		i++;
 	}
 	free (str);
